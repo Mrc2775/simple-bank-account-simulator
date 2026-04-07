@@ -248,7 +248,7 @@ def run_tests():
     assert test_accounts["T001"]["balance"] == balance_before, "FAIL: Overdraft was allowed"
     print("PASS\n")
 
-    # Test 5: Transaction history should have 4 entries (open, deposit, withdraw, failed withdraw not recorded)
+    # Test 5: Transaction history should have 3 entries (open, deposit, withdraw)
     print("Test 5 - Transaction history length:")
     history = test_accounts["T001"]["transactions"]
     assert len(history) == 3, "FAIL: Expected 3 transactions, got %d" % len(history)
