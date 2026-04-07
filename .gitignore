@@ -1,0 +1,5 @@
+transactions.csv
+transactions.txt
+.idea/
+__pycache__/
+*.pyc
